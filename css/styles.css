@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Nunito-Bold";
+    src: url("../fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito-Bold", sans-serif;
+    background: linear-gradient(90.07deg, #FFFFFB 0.05%, #FFFFFB 50.09%, #F8F8FA 50.09%, #F8F8FA 99.92%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    text-align: center;
+    padding: 27px 0 12px 0;
+    margin-bottom: 50px;
+}
+
+.main__sign {
+    padding: 50px 46px 0 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__sign-account-h1 {
+    margin-bottom: 7px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #000000;
+}
+
+.main__sign-account-description {
+    max-width: 496px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #636363;
+    margin-bottom: 42px;
+}
+
+label > span {
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+    color: #C6C6C4;
+}
+
+.form-input {
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 1px solid #C6C6C4;
+    outline: none;
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #323232;
+    width: 100%;
+    background-color: #FFFFFB;
+}
+
+.form-label {
+    margin-bottom: 20px;
+}
+
+.errorRed {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+#passwordError {
+    max-width: 480px;
+}
+
+#checkStyle {
+    margin: 30px 0 40px 0;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+}
+
+.form-button {
+    margin-top: 40px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+button {
+    width: 210px;
+    background: #DD3142;
+    border-radius: 40px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 0;
+    padding: 21px 68px 21px 68px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main__sign-account-have {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.main__sign-account-have a {
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    text-decoration: none;
+}
+
+
+.main__sign-image-img {
+    max-width: 543px;
+    position: relative;
+    left: 0;
+    bottom: 100px;
+}
+
+.main__sign-image-img img {
+    width: 100%;
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C6C6C4;
+    width: 500px;
+    height: 250px;
+    position: fixed;
+    left: calc(50% - 250px);
+    top: calc(50% - 125px);
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.popup__text {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section class="main">
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="images/homeWorks.png" alt="Logo">
+                </a>
+            </div>
+        </header>
+
+        <div class="main__sign">
+            <div class="main__sign-account">
+                <div class="main__sign-account-h1">
+                    <h1>Get your free account</h1>
+                </div>
+                <div class="main__sign-account-description">
+                    Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+                </div>
+                <div class="main__sign-account-form">
+                    <form>
+                        <div class="form-label" id="forRemove1">
+                            <label>
+                                <span>Full Name</span>
+                                <input class="form-input" id="fullName" type="text">
+                            </label>
+                            <div class="errorRed" id="fullNameError">Full Name может содержать только буквы и пробел</div>
+                        </div>
+                        <div class="form-label" id="forRemoveAccount1">
+                            <label>
+                                <span>Your username</span>
+                                <input class="form-input" id="userName" type="text">
+                            </label>
+                            <div class="errorRed" id="userNameError">User Name может содержать только англ. буквы, цифры, _ и -</div>
+                            <div class="errorRed" id="userNameNoFind">Такой пользователь не зарегистрирован</div>
+                        </div>
+                        <div class="form-label" id="forRemove2">
+                            <label>
+                                <span>E-mail</span>
+                                <input class="form-input" id="email" type="email">
+                            </label>
+                            <div class="errorRed" id="emailError">Заполните поле E-mail</div>
+                        </div>
+                        <div class="form-label" id="forRemoveAccount2">
+                            <label>
+                                <span>Password</span>
+                                <input class="form-input" id="password" type="password">
+                            </label>
+                            <div class="errorRed" id="passwordError">Password должен содержать как минимум одну цифру, букву в верх. регистре и спец. символ. Минимальная длина 8</div>
+                            <div class="errorRed" id="passwordNoFind">Неверный пароль</div>
+                        </div>
+                        <div class="form-label" id="forRemove3">
+                            <label>
+                                <span>Repeat Password</span>
+                                <input class="form-input" id="passwordRepeat" type="password">
+                            </label>
+                            <div class="errorRed" id="passwordRepeatError">Repeat Password не совпадает с полем Password</div>
+                        </div>
+                        <div class="form-label" id="checkStyle">
+                            <label>
+                                <input id="checkboxForm" value="true" type="checkbox" checked> Agree to our Terms of Service and Privacy Statement
+                            </label>
+                            <div class="errorRed" id="checkStyleError">Вы не приняли соглашение с правилами</div>
+                        </div>
+                        <div class="form-button">
+                            <button type="button">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="main__sign-account-have">
+                        <a href="#">Already have an account?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__sign-image">
+                <div class="main__sign-image-img">
+                    <img src="images/image.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__text">
+            На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию
+        </div>
+        <div class="popup__button">
+            <button>ОК</button>
+        </div>
+    </div>
+</section>
+
+<script src="jquery-3.6.3.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
